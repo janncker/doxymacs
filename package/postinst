@@ -1,0 +1,12 @@
+#!/bin/bash
+
+echo "Paste the following line to your ~/.emacs"
+
+cat <<EOF
+
+(require 'doxymacs)
+(add-hook 'c-mode-common-hook 'doxymacs-mode)
+
+EOF
+
+exit 0
